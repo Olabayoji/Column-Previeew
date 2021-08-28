@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  padding-bottom: 4em;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  padding-top: 10em;
+  margin: auto;
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  color: hsl(0, 0%, 95%);
+  padding: 3em 5em 3em 3em;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 30px;
+  padding: 1.2em 2.5em;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-1:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-2:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-3:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+[class*="btn-"]:hover {
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+  cursor: pointer;
+}
+/* Tablet Responsiveness */
+@media only screen and (max-width: 1000px) {
+  h1{
+    font-size: 2em;
+  }
+
+  p{
+    padding-bottom: 2.5em
+  }
+
+  .container {
+    width: 800px;
+  }
+
+  .card {
+    padding: 3em 2em;
+  }
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p{
+    padding-bottom: 1.5em;
+  }
+
+  .container {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    padding: 3em 2.5em;
+  }
+
+  .card-1 {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .card-3 {
+    border-radius: 0 0 15px 15px;
+  }
+}
